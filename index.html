@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Your Bakery</title>
+  <title>Fuel & Flour Co.</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #fff;
+      background-color: #ffffff;
       text-align: center;
-    }
-
-    .hero {
-      width: 100%;
-      height: 400px;
-      background-image: url('cookies-hero.jpg');
-      background-size: cover;
-      background-position: center;
     }
 
     .section {
       padding: 40px 20px;
     }
 
-    .images {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .images img {
-      width: 250px;
-      border-radius: 10px;
-    }
-
     h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 30px;
+    }
+
+    p {
+      max-width: 500px;
+      margin: 10px auto;
+      line-height: 1.5;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 20px;
+      margin-top: 20px;
+      background-color: black;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .menu {
       margin-top: 20px;
     }
   </style>
@@ -42,31 +47,52 @@
 
 <body>
 
-  <!-- HERO IMAGE -->
-  <div class="hero"></div>
-
-  <!-- TITLE -->
+  <!-- HEADER -->
   <div class="section">
-    <h1>Small-Batch Cookies 🍪</h1>
-    <p>Made fresh each week 🤍</p>
+    <h1>Fuel & Flour Co.</h1>
+    <p>Small-batch baked goods 🤍</p>
   </div>
 
-  <!-- PRODUCT PHOTOS -->
+  <!-- ABOUT -->
   <div class="section">
-    <div class="images">
-      <img src="cookies-hero.jpg">
-      <img src="cookies-close.jpg">
+    <h2>About</h2>
+    <p>
+      I started Fuel & Flour Co. because I love baking and creating treats that feel special but still simple.
+      Everything is made fresh in small batches with high-quality ingredients.
+    </p>
+  </div>
+
+  <!-- MENU -->
+  <div class="section">
+    <h2>This Week’s Menu</h2>
+    <div class="menu">
+      <p>🍪 Chocolate Chip Cookies — $15</p>
+      <p>🍫 Brownie Boxes — $15</p>
+      <p>📦 Sampler Box — $18</p>
+      <p>✨ Mixed Berry Lemon Loaf — $15</p>
     </div>
   </div>
 
-  <!-- PROCESS -->
+  <!-- ORDER -->
   <div class="section">
-    <h2>Made from scratch</h2>
-    <div class="images">
-      <img src="cookies-process1.jpg">
-      <img src="cookies-process2.jpg">
-    </div>
+    <h2>Order</h2>
+    <p>Orders are confirmed once payment is sent 🤍</p>
+    <a href="https://forms.gle/aRvSqZvnHMZwqviP9" class="button">Order Here</a>
+  </div>
+
+  <!-- PICKUP -->
+  <div class="section">
+    <h2>Pickup</h2>
+    <p>Bellevue, WA</p>
+    <p>Saturday • 3–5pm</p>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="section">
+    <h2>Contact</h2>
+    <p>Instagram: @fuelandflourco</p>
   </div>
 
 </body>
 </html>
+Page 1 of 1
