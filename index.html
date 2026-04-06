@@ -1,98 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Fuel & Flour Co.</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #ffffff;
-      text-align: center;
-    }
-
-    .section {
-      padding: 40px 20px;
-    }
-
-    h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      margin-top: 30px;
-    }
-
-    p {
-      max-width: 500px;
-      margin: 10px auto;
-      line-height: 1.5;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 12px 20px;
-      margin-top: 20px;
-      background-color: black;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-
-    .menu {
-      margin-top: 20px;
-    }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-[linear-gradient(180deg,#fffaf7_0%,#fff7f1_35%,#fffdfa_100%)] text-neutral-900 font-sans">
 
-  <!-- HEADER -->
-  <div class="section">
-    <h1>Fuel & Flour Co.</h1>
-    <p>Small-batch baked goods 🤍</p>
-  </div>
-
-  <!-- ABOUT -->
-  <div class="section">
-    <h2>About</h2>
-    <p>
-      I started Fuel & Flour Co. because I love baking and creating treats that feel special but still simple.
-      Everything is made fresh in small batches with high-quality ingredients.
+  <!-- HERO -->
+  <section class="text-center px-6 py-24">
+    <p class="text-xs uppercase tracking-widest text-rose-700/80">
+      Fuel & Flour Co. · Great Park, Irvine
     </p>
-  </div>
+
+    <h1 class="text-5xl md:text-6xl font-semibold mt-6">
+      Fuel & Flour Co.
+    </h1>
+
+    <p class="mt-4 text-lg text-neutral-600">
+      supporting a dream, one batch at a time
+    </p>
+
+    <p class="mt-6 max-w-xl mx-auto text-neutral-600 leading-relaxed">
+      Small-batch baking created by a competitive figure skater balancing training, school, and everything in between.
+    </p>
+
+    <div class="mt-8 flex justify-center gap-4">
+      <a href="#order" class="bg-black text-white px-6 py-3 rounded-full">Order This Week</a>
+      <a href="#menu" class="border px-6 py-3 rounded-full">View Menu</a>
+    </div>
+  </section>
 
   <!-- MENU -->
-  <div class="section">
-    <h2>This Week’s Menu</h2>
-    <div class="menu">
-      <p>🍪 Chocolate Chip Cookies — $15</p>
-      <p>🍫 Brownie Boxes — $15</p>
-      <p>📦 Sampler Box — $18</p>
-      <p>✨ Mixed Berry Lemon Loaf — $15</p>
+  <section id="menu" class="px-6 py-16 max-w-4xl mx-auto">
+    <h2 class="text-2xl font-semibold text-center mb-8">Menu</h2>
+
+    <div class="grid gap-6 md:grid-cols-2">
+      
+      <div class="bg-white p-6 rounded-2xl shadow">
+        <h3 class="font-semibold">Chocolate Chip Cookies</h3>
+        <p class="text-sm mt-2 text-neutral-600">
+          Soft, homemade cookies with crisp edges and a gooey center.
+        </p>
+        <p class="mt-2">$15 / box</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow">
+        <h3 class="font-semibold">Brownie Box</h3>
+        <p class="text-sm mt-2 text-neutral-600">
+          Rich, fudgy brownies with a soft center.
+        </p>
+        <p class="mt-2">$15 / box</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow">
+        <h3 class="font-semibold">Sampler Box</h3>
+        <p class="text-sm mt-2 text-neutral-600">
+          A mix of favorites — perfect for trying everything.
+        </p>
+        <p class="mt-2">$18 / box</p>
+      </div>
+
+      <div class="bg-rose-50 p-6 rounded-2xl shadow">
+        <h3 class="font-semibold">Blueberry Lemon Loaf</h3>
+        <p class="text-sm mt-2 text-neutral-600">
+          Moist, soft loaf made with fresh blueberries and a hint of lemon.
+        </p>
+        <p class="mt-2">$13</p>
+      </div>
+
     </div>
-  </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="px-6 py-20 max-w-3xl mx-auto text-center">
+    <h2 class="text-2xl font-semibold">About Me</h2>
+
+    <p class="mt-6">
+      Hi, my name is Michaela! I’m 16 years old, a competitive figure skater, and a junior in high school. I spend most of my time at the rink training and working toward something that means everything to me.
+    </p>
+
+    <p class="mt-4">
+      When I’m not training, I’m usually doing schoolwork or in the kitchen. Baking has become one of my biggest hobbies.
+    </p>
+
+    <p class="mt-4">
+      I started Fuel & Flour Co. as a way to share something I love while supporting my training.
+    </p>
+
+    <p class="mt-4 font-medium">
+      Every order helps me move closer to my dream 🤍
+    </p>
+  </section>
 
   <!-- ORDER -->
-  <div class="section">
-    <h2>Order</h2>
-    <p>Orders are confirmed once payment is sent 🤍</p>
-    <a href="https://forms.gle/aRvSqZvnHMZwqviP9" class="button">Order Here</a>
-  </div>
+  <section id="order" class="bg-black text-white text-center px-6 py-20">
+    <h2 class="text-2xl font-semibold">Order</h2>
 
-  <!-- PICKUP -->
-  <div class="section">
-    <h2>Pickup</h2>
-    <p>Bellevue, WA</p>
-    <p>Saturday • 3–5pm</p>
-  </div>
+    <p class="mt-4">
+      To place an order, message me on Instagram:
+    </p>
 
-  <!-- CONTACT -->
-  <div class="section">
-    <h2>Contact</h2>
-    <p>Instagram: @fuelandflourco</p>
-  </div>
+    <a href="https://instagram.com/fuelandflourco" class="mt-2 block font-medium text-white underline">
+      Order on Instagram → @fuelandflourco
+    </a>
+
+    <p class="mt-3 text-sm text-gray-400">
+      Pickup: Great Park, Irvine (details after order)
+    </p>
+
+  </section>
 
 </body>
 </html>
-Page 1 of 1
